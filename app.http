@@ -1,0 +1,27 @@
+# GET http://192.168.1.50:3000/profiles?location=seoul
+
+GET http://192.168.1.50:3000/profiles/
+
+### create profile
+POST http://192.168.1.50:3000/profiles
+Content-Type: application/json
+
+{
+    "name": "New Profile",
+    "description": "This is a new profile."
+}
+
+### get profile by id
+GET http://192.168.1.50:3000/profiles/dc93e949-db6b-4935-8219-970d5661cff6
+
+### update profile
+PUT http://192.168.1.50:3000/profiles/skdfew
+Content-Type: application/json
+
+{
+    "name": "Updated Profile",
+    "description": "This profile has been updated."
+}
+
+### delete profile
+DELETE http://192.168.1.50:3000/profiles/skdf
